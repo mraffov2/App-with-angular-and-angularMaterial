@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-11 com-sm-11 col-lg-5">
+            <mat-card class="example-card mt-4" *ngFor= "let post of posts">
+                <mat-card-header>
+                  <mat-card-title>{{post.title}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                  <p>
+                    {{post.body}}
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button>LIKE</button>
+                  <button mat-button>SHARE</button>
+                </mat-card-actions>
+              </mat-card>
+        </div>
+    </div>
+</div>
+
